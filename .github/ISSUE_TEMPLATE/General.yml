@@ -9,7 +9,7 @@ body:
     options:
     - label: I have searched the existing issues
       required: true
-      - type: textarea
+- type: textarea
   attributes:
     label: Current Behavior
     description: A concise description of what you're experiencing.
@@ -21,7 +21,7 @@ body:
     description: A concise description of what you expected to happen.
   validations:
     required: false
-    - type: textarea
+- type: textarea
   attributes:
     label: Anything else?
     description: |
