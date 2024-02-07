@@ -1,0 +1,51 @@
+name: ⚠️ Reproducibility problem
+description: "Report a problem with reproducing a finding."
+title: "[Reproducibility] <title>"
+labels: ["Bug"]
+body:
+- type: checkboxes
+  attributes:
+    label: Is there an existing issue for this?
+    description: Please search to see if an issue already exists for the problem you encountered.
+    options:
+    - label: I have searched the existing issues
+      required: true
+- type: textarea
+  attributes:
+    label: The problem
+    description: A concise description of the problem you've encountered.
+  validations:
+    required: false
+- type: textarea
+  attributes:
+    label: Reproducibility
+    description: Steps to reproduce the problem.
+    placeholder: |
+      1. In this environment...
+      1. With this data and script...
+      1. On line...
+      1. See error...
+  validations:
+    required: false
+- type: textarea
+  attributes:
+    label: Environment
+    description: |
+      examples:
+        - **OS**: Ubuntu 20.04
+        - **Software version**: R 4.3.1
+    value: |
+        - OS:
+        - Software version:
+    render: markdown
+  validations:
+    required: false
+- type: textarea
+  attributes:
+    label: Anything else?
+    description: |
+      Links? References? Anything that will give us more context about the issue you are encountering!
+
+      Tip: You can attach images by clicking this area to highlight it and then dragging files in.
+  validations:
+    required: false
